@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="EcoWatch - AI-powered environmental intelligence for smarter, greener campuses.">
+
+    <title>EcoWatch | Environmental Intelligence</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         BACKGROUND ATMOSPHERE
+    ========================================== -->
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">✦</span>
+                <span>EcoWatch</span>
+            </a>
+
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#how-it-works">How It Works</a>
+
+                <a href="#impact">Impact</a>
+
+                <a href="#dashboard">Dashboard</a>
+
+            </div>
+
+            <button class="nav-report-btn" onclick="scrollToReport()">
+                Report an Issue
+                <span>↗</span>
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="pulse-dot"></span>
+                    Environmental intelligence for tomorrow
+                </div>
+
+                <h1>
+                    Watch your campus.
+                    <span>Protect your planet.</span>
+                </h1>
+
+                <p class="hero-description">
+                    EcoWatch turns everyday environmental problems into
+                    actionable insights using AI — helping campuses become
+                    cleaner, smarter and more sustainable.
+                </p>
+
+                <div class="hero-actions">
+
+                    <button class="primary-btn" onclick="scrollToReport()">
+                        Report an Issue
+                        <span>→</span>
+                    </button>
+
+                    <button class="secondary-btn" onclick="scrollToDashboard()">
+                        Explore Impact
+                    </button>
+
+                </div>
+
+                <div class="hero-trust">
+
+                    <div class="trust-item">
+                        <strong>AI</strong>
+                        <span>Powered Analysis</span>
+                    </div>
+
+                    <div class="trust-divider"></div>
+
+                    <div class="trust-item">
+                        <strong>24/7</strong>
+                        <span>Environmental Watch</span>
+                    </div>
+
+                    <div class="trust-divider"></div>
+
+                    <div class="trust-item">
+                        <strong>1</strong>
+                        <span>Greener Community</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual">
+
+                <div class="orbital orbital-one"></div>
+                <div class="orbital orbital-two"></div>
+
+                <div class="earth-card">
+
+                    <div class="earth-glow"></div>
+
+                    <div class="earth">
+                        🌍
+                    </div>
+
+                    <div class="earth-info">
+
+                        <span class="status-dot"></span>
+
+                        <div>
+                            <small>Campus Status</small>
+                            <strong>Actively Monitoring</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Floating cards -->
+
+                <div class="floating-card air-card">
+
+                    <div class="mini-icon">◌</div>
+
+                    <div>
+                        <small>Air Quality</small>
+                        <strong>Good</strong>
+                    </div>
+
+                    <span class="trend">↑ 12%</span>
+
+                </div>
+
+
+                <div class="floating-card energy-card">
+
+                    <div class="mini-icon">⚡</div>
+
+                    <div>
+                        <small>Energy Saved</small>
+                        <strong>1,284 kWh</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card waste-card">
+
+                    <div class="mini-icon">♻</div>
+
+                    <div>
+                        <small>Waste Diverted</small>
+                        <strong>342 kg</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             LIVE STATS
+        ========================================== -->
+
+        <section class="stats-section">
+
+            <div class="stats-container">
+
+                <div class="stat-card">
+
+                    <span class="stat-number" id="reportsCount">
+                        1,248
+                    </span>
+
+                    <span class="stat-label">
+                        Environmental Reports
+                    </span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span class="stat-number">
+                        4.8T
+                    </span>
+
+                    <span class="stat-label">
+                        Estimated CO₂ Impact
+                    </span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span class="stat-number">
+                        92%
+                    </span>
+
+                    <span class="stat-label">
+                        Issues Resolved
+                    </span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <span class="stat-number">
+                        18
+                    </span>
+
+                    <span class="stat-label">
+                        Active Campus Zones
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             HOW IT WORKS
+        ========================================== -->
+
+        <section id="how-it-works" class="section">
+
+            <div class="section-heading">
+
+                <div class="section-tag">
+                    THE ECOWATCH METHOD
+                </div>
+
+                <h2>
+                    From observation
+                    <span>to action.</span>
+                </h2>
+
+                <p>
+                    One simple report can become a meaningful environmental
+                    action.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div class="step-icon">
+                        ◉
+                    </div>
+
+                    <h3>Spot</h3>
+
+                    <p>
+                        Notice an environmental issue around your campus,
+                        hostel or neighbourhood.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div class="step-icon">
+                        ↗
+                    </div>
+
+                    <h3>Report</h3>
+
+                    <p>
+                        Submit a description or photograph of the problem
+                        through EcoWatch.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div class="step-icon">
+                        ✦
+                    </div>
+
+                    <h3>Understand</h3>
+
+                    <p>
+                        AI analyses the report and identifies its category,
+                        severity and environmental impact.
+                    </p>
+
+                </div>
+
+
+                <div class="step-line"></div>
+
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <div class="step-icon">
+                        ✓
+                    </div>
+
+                    <h3>Act</h3>
+
+                    <p>
+                        Get an actionable recommendation and track the
+                        collective impact.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             REPORT SECTION
+        ========================================== -->
+
+        <section id="report" class="report-section">
+
+            <div class="report-container">
+
+                <div class="report-intro">
+
+                    <div class="section-tag">
+                        MAKE AN IMPACT
+                    </div>
+
+                    <h2>
+                        What did you
+                        <span>notice?</span>
+                    </h2>
+
+                    <p>
+                        Your observation could be the first step towards
+                        solving a larger environmental problem.
+                    </p>
+
+                    <div class="category-preview">
+
+                        <div>
+                            <span>01</span>
+                            <p>Air</p>
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            <p>Heat & Water</p>
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            <p>Waste & Energy</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REPORT FORM -->
+
+                <div class="report-card">
+
+                    <form id="reportForm">
+
+                        <div class="form-header">
+
+                            <div>
+                                <span class="form-label">
+                                    NEW REPORT
+                                </span>
+
+                                <h3>
+                                    Tell us what happened.
+                                </h3>
+                            </div>
+
+                            <span class="form-status">
+                                ● Secure
+                            </span>
+
+                        </div>
+
+
+                        <!-- CATEGORY -->
+
+                        <div class="form-group">
+
+                            <label>
+                                What type of issue is this?
+                            </label>
+
+                            <div class="category-grid">
+
+                                <button
+                                    type="button"
+                                    class="category-option"
+                                    data-category="Air"
+                                    onclick="selectCategory(this)">
+
+                                    <span>◌</span>
+                                    Air
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="category-option"
+                                    data-category="Heat & Water"
+                                    onclick="selectCategory(this)">
+
+                                    <span>≈</span>
+                                    Heat & Water
+
+                                </button>
+
+
+                                <button
+                                    type="button"
+                                    class="category-option"
+                                    data-category="Waste & Energy"
+                                    onclick="selectCategory(this)">
+
+                                    <span>♻</span>
+                                    Waste & Energy
+
+                                </button>
+
+                            </div>
+
+                            <input
+                                type="hidden"
+                                id="category"
+                                name="category">
+
+                        </div>
+
+
+                        <!-- DESCRIPTION -->
+
+                        <div class="form-group">
+
+                            <label for="description">
+                                Describe the problem
+                            </label>
+
+                            <textarea
+                                id="description"
+                                name="description"
+                                rows="4"
+                                placeholder="Example: The lights and air conditioning have been running in an empty classroom for several hours..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- LOCATION -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="location">
+                                    Location
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="location"
+                                    name="location"
+                                    placeholder="e.g. Block AB3"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="severity">
+                                    Your estimated severity
+                                </label>
+
+                                <select id="severity">
+
+                                    <option value="">
+                                        Select severity
+                                    </option>
+
+                                    <option value="Low">
+                                        Low
+                                    </option>
+
+                                    <option value="Medium">
+                                        Medium
+                                    </option>
+
+                                    <option value="High">
+                                        High
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- IMAGE UPLOAD -->
+
+                        <div class="form-group">
+
+                            <label>
+                                Add evidence
+                                <span class="optional">
+                                    Optional
+                                </span>
+                            </label>
+
+                            <label class="upload-area">
+
+                                <input
+                                    type="file"
+                                    id="imageUpload"
+                                    accept="image/*"
+                                    hidden
+                                    onchange="handleImageUpload(event)">
+
+                                <div class="upload-icon">
+                                    ↑
+                                </div>
+
+                                <strong>
+                                    Drop an image here
+                                </strong>
+
+                                <span>
+                                    or click to browse
+                                </span>
+
+                                <small id="fileName">
+                                    JPG, PNG up to 10MB
+                                </small>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- SUBMIT -->
+
+                        <button
+                            type="submit"
+                            class="submit-btn">
+
+                            <span>
+                                Analyse with EcoWatch AI
+                            </span>
+
+                            <span>
+                                →
+                            </span>
+
+                        </button>
+
+
+                        <p class="privacy-note">
+                            Your report will be securely processed.
+                            AWS-powered infrastructure will be used for
+                            storage and analysis.
+                        </p>
+
+                    </form>
+
+
+                    <!-- AI RESULT -->
+
+                    <div
+                        id="resultPanel"
+                        class="result-panel hidden">
+
+                        <div class="result-header">
+
+                            <div class="success-icon">
+                                ✓
+                            </div>
+
+                            <div>
+                                <span>
+                                    ECOWATCH AI ANALYSIS
+                                </span>
+
+                                <h3>
+                                    Analysis Complete
+                                </h3>
+                            </div>
+
+                        </div>
+
+
+                        <div class="result-grid">
+
+                            <div class="result-item">
+
+                                <small>Category</small>
+
+                                <strong id="resultCategory">
+                                    Waste & Energy
+                                </strong>
+
+                            </div>
+
+
+                            <div class="result-item">
+
+                                <small>Severity</small>
+
+                                <strong id="resultSeverity">
+                                    Medium
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="recommendation">
+
+                            <small>
+                                RECOMMENDED ACTION
+                            </small>
+
+                            <p id="resultRecommendation">
+                                EcoWatch recommends reporting this issue
+                                to the responsible campus team and reducing
+                                unnecessary resource consumption.
+                            </p>
+
+                        </div>
+
+
+                        <div class="impact-estimate">
+
+                            <span>Estimated potential impact</span>
+
+                            <strong id="resultImpact">
+                                4.2 kg CO₂ / day
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            class="secondary-btn result-close"
+                            onclick="resetReport()">
+
+                            Report another issue
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             IMPACT DASHBOARD
+        ========================================== -->
+
+        <section id="dashboard" class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div class="section-tag">
+                    CAMPUS INTELLIGENCE
+                </div>
+
+                <h2>
+                    See the impact
+                    <span>together.</span>
+                </h2>
+
+                <p>
+                    Every report contributes to a clearer picture of
+                    your campus environment.
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-main">
+
+                    <div class="dashboard-header">
+
+                        <div>
+
+                            <span>
+                                ENVIRONMENTAL IMPACT
+                            </span>
+
+                            <h3>
+                                Campus sustainability overview
+                            </h3>
+
+                        </div>
+
+                        <button class="period-btn">
+                            This month ▾
+                        </button>
+
+                    </div>
+
+
+                    <div class="impact-chart">
+
+                        <div class="chart-labels">
+
+                            <span>100%</span>
+                            <span>75%</span>
+                            <span>50%</span>
+                            <span>25%</span>
+                            <span>0%</span>
+
+                        </div>
+
+
+                        <div class="bars">
+
+                            <div class="bar-group">
+                                <div class="bar bar-1"></div>
+                                <span>Mon</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar bar-2"></div>
+                                <span>Tue</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar bar-3"></div>
+                                <span>Wed</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar bar-4"></div>
+                                <span>Thu</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar bar-5"></div>
+                                <span>Fri</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar bar-6"></div>
+                                <span>Sat</span>
+                            </div>
+
+                            <div class="bar-group">
+                                <div class="bar bar-7"></div>
+                                <span>Sun</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-side">
+
+                    <div class="mini-stat">
+
+                        <div class="mini-stat-icon">
+                            ⚡
+                        </div>
+
+                        <div>
+
+                            <span>
+                                ENERGY SAVED
+                            </span>
+
+                            <strong>
+                                1,284 kWh
+                            </strong>
+
+                            <small>
+                                ↑ 18.4% this month
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mini-stat">
+
+                        <div class="mini-stat-icon">
+                            💧
+                        </div>
+
+                        <div>
+
+                            <span>
+                                WATER SAVED
+                            </span>
+
+                            <strong>
+                                8,420 L
+                            </strong>
+
+                            <small>
+                                ↑ 11.2% this month
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mini-stat">
+
+                        <div class="mini-stat-icon">
+                            ♻
+                        </div>
+
+                        <div>
+
+                            <span>
+                                WASTE DIVERTED
+                            </span>
+
+                            <strong>
+                                342 kg
+                            </strong>
+
+                            <small>
+                                ↑ 24.7% this month
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CALL TO ACTION
+        ========================================== -->
+
+        <section class="cta-section">
+
+            <div class="cta-glow"></div>
+
+            <div class="cta-content">
+
+                <span class="section-tag">
+                    SMALL OBSERVATIONS. BIGGER CHANGE.
+                </span>
+
+                <h2>
+                    Your campus is
+                    <span>worth watching.</span>
+                </h2>
+
+                <p>
+                    Start with one observation. Let technology turn it
+                    into action.
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="scrollToReport()">
+
+                    Make a Report
+                    <span>→</span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    <span class="logo-icon">✦</span>
+                    EcoWatch
+                </a>
+
+                <p>
+                    Environmental intelligence for
+                    a more sustainable tomorrow.
+                </p>
+
+            </div>
+
+
+            <div class="footer-tech">
+
+                <span>
+                    POWERED BY
+                </span>
+
+                <strong>
+                    AWS · AI · HUMAN ACTION
+                </strong>
+
+            </div>
+
+
+            <div class="footer-copy">
+
+                © 2026 EcoWatch
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
