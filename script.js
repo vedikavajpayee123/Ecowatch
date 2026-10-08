@@ -28,7 +28,7 @@
     this URL with our actual API Gateway URL.
 */
 
-const AWS_API_URL = "";
+const AWS_API_URL = "https://m9jj9keo63.execute-api.ap-southeast-2.amazonaws.com/reports";
 
 
 /* =====================================================
